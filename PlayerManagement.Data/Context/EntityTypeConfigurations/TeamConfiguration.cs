@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PlayerManagement.Model.Entities;
 using PlayerManagement.Model.Enums;
 
-namespace PlayerManagement.Data.Concrete.Context.EntityTypeConfigurations
+namespace PlayerManagement.Data.Context.EntityTypeConfigurations
 {
     public class TeamConfiguration : IEntityTypeConfiguration<Team>
     {

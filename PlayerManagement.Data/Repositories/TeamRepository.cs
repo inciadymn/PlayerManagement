@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlayerManagement.Data.Concrete.Repositories
+namespace PlayerManagement.Data.Repositories
 {
     public class TeamRepository : ITeamRepository
     {

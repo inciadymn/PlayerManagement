@@ -1,13 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using PlayerManagement.Data.Concrete.Context;
-using PlayerManagement.Data.Concrete.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using PlayerManagement.Data.Context;
+using PlayerManagement.Data.Repositories;
 
-namespace PlayerManagement.Data.Concrete.Extensions
+namespace PlayerManagement.Data.Extensions
 {
     public static class RegisterRepository
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using PlayerManagement.Core.Services;
-using PlayerManagement.Data.Concrete.Extensions;
+using PlayerManagement.Data.Extensions;
 
 namespace PlayerManagement.Core.Extensions
 {

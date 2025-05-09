@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PlayerManagement.Model.Entities;
 
-namespace PlayerManagement.Data.Concrete.Context.EntityTypeConfigurations
+namespace PlayerManagement.Data.Context.EntityTypeConfigurations
 {
     public class PlayerConfiguration : IEntityTypeConfiguration<Player>
     {

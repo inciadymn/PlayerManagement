@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PlayerManagement.Data.Concrete.Context.EntityTypeConfigurations;
+using PlayerManagement.Data.Context.EntityTypeConfigurations;
 using PlayerManagement.Model.Entities;
 
-namespace PlayerManagement.Data.Concrete.Context
+namespace PlayerManagement.Data.Context
 {
     public class PlayerManagementDbContext : DbContext
     {

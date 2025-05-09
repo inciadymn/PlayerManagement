@@ -3,7 +3,7 @@ using PlayerManagement.Core.Services;
 
 namespace PlayerManagement.Api.Controllers
 {
-    [Route("api/player")]
+    [Route("api/players")]
     [ApiController]
     public class PlayerController : ControllerBase
     {
