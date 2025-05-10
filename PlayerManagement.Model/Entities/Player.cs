@@ -6,8 +6,7 @@
         public required DateTime DateOfBirth { get; set; }
         public required int Height { get; set; }
         public required string Position { get; set; }
-
-        public int TeamId { get; set; }
+        public int? TeamId { get; set; }
         public Team? Team { get; set; }
     }
 }

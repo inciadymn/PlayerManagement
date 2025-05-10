@@ -9,5 +9,8 @@ namespace PlayerManagement.Data.Repositories
 {
     public interface ITeamRepository 
     {
+        Task<List<Team>> GetAllTeamsAsync();
+
+        Task<Team> GetAllTeamPlayersAsync(int teamId);
     }
 }

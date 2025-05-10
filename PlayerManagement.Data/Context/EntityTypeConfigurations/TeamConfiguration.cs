@@ -19,7 +19,8 @@ namespace PlayerManagement.Data.Context.EntityTypeConfigurations
 
             builder.HasMany(a => a.Players)
                 .WithOne(a => a.Team)
-                .HasForeignKey(a => a.TeamId);
+                .HasForeignKey(a => a.TeamId)
+                .IsRequired(false);
 
             builder.HasData(new List<Team>()
             {
@@ -28,101 +29,14 @@ namespace PlayerManagement.Data.Context.EntityTypeConfigurations
                     Id = 1,
                     Name = "Real Madrid",
                     Country = "Spain",
-                    CreatedDate = DateTime.Now,
-                    Players = new List<Player>()
-                    {
-                        new Player()
-                        {
-                            Id = 1,
-                            FullName = "Kylian Mbappe",
-                            Height = 178,
-                            DateOfBirth = DateTime.Parse("12.20.1998"),
-                            Position = Position.CentreForward.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 1
-                        },
-                        new Player()
-                        {
-                            Id = 2,
-                            FullName = "Luka Modric",
-                            Height = 172,
-                            DateOfBirth = DateTime.Parse("09.09.1985"),
-                            Position = Position.Midfielder.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 1
-                        },
-                        new Player()
-                        {
-                            Id = 3,
-                            FullName = "Daniel Carvajal",
-                            Height = 173,
-                            DateOfBirth = DateTime.Parse("01.11.1992"),
-                            Position = Position.RightBack.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 1
-                        },
-                        new Player()
-                        {
-                            Id = 4,
-                            FullName = "Lucas Vazquez",
-                            Height = 173,
-                            DateOfBirth = DateTime.Parse("07.01.1991"),
-                            Position = Position.RightBack.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 1
-                        }
-                    }
+                    CreatedDate = DateTime.Parse("05.10.2025")
                 },
-
-                 new Team()
+                new Team()
                 {
                     Id = 2,
                     Name = "AZ Alkmaar",
                     Country = "Netherlands",
-                    CreatedDate = DateTime.Now,
-                    Players = new List<Player>()
-                    {
-                        new Player()
-                        {
-                            Id = 1,
-                            FullName = "Troy Parrott",
-                            Height = 185,
-                            DateOfBirth = DateTime.Parse("02.04.2002"),
-                            Position = Position.CentreForward.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 2
-                        },
-                        new Player()
-                        {
-                            Id = 2,
-                            FullName = "Mees de Wit",
-                            Height = 181,
-                            DateOfBirth = DateTime.Parse("04.17.1998"),
-                            Position = Position.LeftBack.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 2
-                        },
-                        new Player()
-                        {
-                            Id = 3,
-                            FullName = "Mexx Meerdink",
-                            Height = 182,
-                            DateOfBirth = DateTime.Parse("07.24.2003"),
-                            Position = Position.CentreForward.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 2
-                        },
-                        new Player()
-                        {
-                            Id = 4,
-                            FullName = "Zico Buurmeester",
-                            Height = 184,
-                            DateOfBirth = DateTime.Parse("06.07.2002"),
-                            Position = Position.Midfielder.ToString(),
-                            CreatedDate = DateTime.Now,
-                            TeamId = 2
-                        }
-                    }
+                    CreatedDate = DateTime.Parse("05.10.2025")
                 }
             });
         }

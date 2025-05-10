@@ -6,18 +6,17 @@ namespace PlayerManagement.Data.Context
 {
     public class PlayerManagementDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public PlayerManagementDbContext(DbContextOptions<PlayerManagementDbContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer("Server=.; Database=PlayerManagementDb; uid=sa; pwd=as");
         }
-
-        public DbSet<Player> Players { get; set; }
-        public DbSet<Team> Teams { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new PlayerConfiguration());
             modelBuilder.ApplyConfiguration(new TeamConfiguration());
         }
+
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Team> Teams { get; set; }
     }
 }

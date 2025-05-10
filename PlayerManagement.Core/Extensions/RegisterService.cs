@@ -6,9 +6,9 @@ namespace PlayerManagement.Core.Extensions
 {
     public static class RegisterService
     {
-        public static void AddScopeCore(this IServiceCollection services)
+        public static void AddScopeCore(this IServiceCollection services, string connectionString)
         {
-            services.AddScopeData();
+            services.AddScopeData(connectionString);
             services.AddScoped<IPlayerService, PlayerService>();
             services.AddScoped<ITeamService, TeamService>();
         }
