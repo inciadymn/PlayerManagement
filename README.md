@@ -1,10 +1,11 @@
 # PlayerManagement
-This project is a project that you can manage the players and teams with web services developed with .Net 8.
+This project is that you can manage the players and teams which is developed with .Net 8.
 
 ## Tech
 
 - .Net 8.0
-- MS-SQL
+- MSSQL
+- Entity Framework
 
 
 ## About Architecture
