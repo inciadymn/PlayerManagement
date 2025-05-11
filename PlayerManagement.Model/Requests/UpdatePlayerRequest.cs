@@ -12,7 +12,7 @@ namespace PlayerManagement.Model.Requests
         public DateTime DateOfBirth { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]
-        [Range(30, 250, ErrorMessage = "Please enter a value bigger than {0}")]
+        [Range(30, 250, ErrorMessage = "Please enter a value bigger than 30")]
         public int Height { get; set; }
 
         [Required(ErrorMessage = "{0} is required")]

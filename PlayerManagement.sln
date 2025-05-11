@@ -11,12 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManagement.Data", "Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManagement.Core", "PlayerManagement.Core\PlayerManagement.Core.csproj", "{882694E4-7D55-44CE-B151-8D75EFBA5B89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManagement.Test", "PlayerManagement.Test\PlayerManagement.Test.csproj", "{65CB991E-508F-4463-8856-FF2161C90FCC}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManagement.Tests", "PlayerManagement.Tests\PlayerManagement.Tests.csproj", "{EF490491-DA9D-4E48-9232-A66B6A5A2EB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +40,10 @@ Global
 		{882694E4-7D55-44CE-B151-8D75EFBA5B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{882694E4-7D55-44CE-B151-8D75EFBA5B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{882694E4-7D55-44CE-B151-8D75EFBA5B89}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65CB991E-508F-4463-8856-FF2161C90FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65CB991E-508F-4463-8856-FF2161C90FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65CB991E-508F-4463-8856-FF2161C90FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65CB991E-508F-4463-8856-FF2161C90FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF490491-DA9D-4E48-9232-A66B6A5A2EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF490491-DA9D-4E48-9232-A66B6A5A2EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF490491-DA9D-4E48-9232-A66B6A5A2EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF490491-DA9D-4E48-9232-A66B6A5A2EB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
